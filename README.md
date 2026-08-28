@@ -341,8 +341,8 @@ proyecto_mlops_drift/
 
 ### Estructura de los directorios
 
-### > content
-# 📁 Estructura del proyecto MLOps
+# > content
+## 📁 Estructura del proyecto MLOps
 
 La estructura principal del proyecto se organiza de la siguiente manera:
 
@@ -405,7 +405,7 @@ La estructura principal del proyecto se organiza de la siguiente manera:
 
 ---
 
-# 🧠 Organización conceptual del proyecto
+## 🧠 Organización conceptual del proyecto
 
 La estructura del repositorio representa las principales etapas del ciclo de vida de un sistema de Machine Learning bajo un enfoque MLOps.
 
@@ -456,7 +456,7 @@ Acción
 
 ---
 
-# 🔄 Flujo MLOps del proyecto
+## 🔄 Flujo MLOps del proyecto
 
 El proyecto busca implementar un flujo reproducible para el desarrollo, despliegue y monitoreo de un modelo de Machine Learning.
 
@@ -507,7 +507,7 @@ Evaluación de reentrenamiento
 
 ---
 
-# 📊 Datos
+## 📊 Datos
 
 El directorio:
 
@@ -531,7 +531,7 @@ Puede contener:
 
 ---
 
-# 🌿 Dataset PlantVillage
+## 🌿 Dataset PlantVillage
 
 El directorio:
 
@@ -565,7 +565,7 @@ distribuidas en:
 
 ---
 
-# 🧪 Experimentos con MLflow
+## 🧪 Experimentos con MLflow
 
 El directorio:
 
@@ -588,7 +588,7 @@ Esto permite mantener trazabilidad entre diferentes experimentos realizados dura
 
 ---
 
-# 🤖 Modelos
+## 🤖 Modelos
 
 El directorio:
 
@@ -604,7 +604,7 @@ Los modelos almacenados pueden ser posteriormente cargados por la API de inferen
 
 ---
 
-# ⚙️ Código fuente
+## ⚙️ Código fuente
 
 El directorio:
 
@@ -630,7 +630,7 @@ Este directorio puede incluir componentes relacionados con:
 
 ---
 
-# 🌐 API de inferencia
+## 🌐 API de inferencia
 
 El directorio:
 
@@ -678,7 +678,7 @@ Respuesta JSON
 
 ---
 
-# 📡 Monitoreo
+## 📡 Monitoreo
 
 El directorio:
 
@@ -701,7 +701,7 @@ El monitoreo puede considerar:
 
 ---
 
-# 📉 Data Drift
+## 📉 Data Drift
 
 El monitoreo de Data Drift permite detectar cambios entre los datos utilizados como referencia y los datos recibidos durante producción.
 
@@ -723,7 +723,7 @@ Estas ventanas permiten estudiar cómo cambia progresivamente la distribución d
 
 ---
 
-# 📊 Dashboard
+## 📊 Dashboard
 
 El directorio:
 
@@ -751,7 +751,7 @@ Streamlit
 
 ---
 
-# 📝 Archivos de logs
+## 📝 Archivos de logs
 
 Los archivos:
 
@@ -773,7 +773,7 @@ Los logs pueden utilizarse para:
 
 ---
 
-# 🔢 Archivos PID
+## 🔢 Archivos PID
 
 Los archivos:
 
@@ -789,7 +789,7 @@ Estos archivos permiten administrar procesos que se ejecutan en segundo plano.
 
 ---
 
-# 📑 Informe de integridad
+## 📑 Informe de integridad
 
 El archivo:
 
@@ -813,7 +813,7 @@ Este control constituye una etapa fundamental antes del entrenamiento del modelo
 
 ---
 
-# 🧩 Separación de responsabilidades
+## 🧩 Separación de responsabilidades
 
 La estructura del proyecto busca mantener separados los principales componentes del sistema:
 
@@ -870,7 +870,7 @@ Esta separación facilita:
 
 ---
 
-# 🧹 Archivos que normalmente no deberían almacenarse en GitHub
+## 🧹 Archivos que normalmente no deberían almacenarse en GitHub
 
 Algunos elementos mostrados en la estructura son generados automáticamente durante la ejecución.
 
@@ -918,7 +918,7 @@ Thumbs.db
 
 ---
 
-# ✅ Estructura recomendada del repositorio
+## ✅ Estructura recomendada del repositorio
 
 Una versión más limpia para GitHub podría quedar organizada de la siguiente forma:
 
@@ -948,7 +948,7 @@ __pycache__/
 
 ---
 
-# 🎯 Objetivo de la organización
+## 🎯 Objetivo de la organización
 
 La organización del repositorio busca mantener un proyecto reproducible y estructurado que permita cubrir el ciclo completo de Machine Learning y MLOps:
 
@@ -982,8 +982,8 @@ Reentrenamiento o Rollback
 
 Esta estructura permite separar claramente el desarrollo experimental del funcionamiento operacional del sistema y facilita la incorporación progresiva de nuevas funcionalidades.
 
-### > Documentos
-# 📄 Documentación del proyecto
+# > Documentos
+## 📄 Documentación del proyecto
 
 El repositorio incluye los siguientes documentos complementarios:
 
@@ -1004,7 +1004,7 @@ El repositorio incluye los siguientes documentos complementarios:
 
 ---
 
-# 📊 Presentación del proyecto
+## 📊 Presentación del proyecto
 
 El archivo:
 
@@ -1031,7 +1031,7 @@ Entre los contenidos principales se encuentran:
 
 ---
 
-# 📄 Resumen ejecutivo
+## 📄 Resumen ejecutivo
 
 El archivo:
 
@@ -1055,7 +1055,7 @@ Su propósito es documentar de manera estructurada:
 
 ---
 
-# 🧩 Relación entre ambos documentos
+## 🧩 Relación entre ambos documentos
 
 Ambos archivos cumplen funciones complementarias:
 
@@ -1075,11 +1075,11 @@ Presentación de resultados
 ```
 
 El documento Word contiene el desarrollo más detallado, mientras que la presentación PowerPoint resume los aspectos principales para su exposición y comunicación.
-### > Img
+# > Img
 Imagenes Para los Documentos
 
-### > Modelos
-# 🧪 Archivos principales del modelo MLOps
+# > Modelos
+## 🧪 Archivos principales del modelo MLOps
 
 El repositorio incluye los siguientes archivos relacionados con el entrenamiento, validación, transformación y despliegue del modelo de Machine Learning aplicado al conjunto PlantVillage:
 
@@ -1106,7 +1106,7 @@ El repositorio incluye los siguientes archivos relacionados con el entrenamiento
 
 ---
 
-# 📓 Notebook principal
+## 📓 Notebook principal
 
 El archivo:
 
@@ -1132,7 +1132,7 @@ Su objetivo es proporcionar una ejecución reproducible y documentada del flujo 
 
 ---
 
-# 🤖 Modelo serializado
+## 🤖 Modelo serializado
 
 El archivo:
 
@@ -1169,7 +1169,7 @@ La principal ventaja es evitar la necesidad de volver a entrenar el modelo cada 
 
 ---
 
-# 🧪 Script de prueba del modelo
+## 🧪 Script de prueba del modelo
 
 El archivo:
 
@@ -1209,7 +1209,7 @@ Validación del resultado
 
 ---
 
-# 📊 Métricas de entrenamiento
+## 📊 Métricas de entrenamiento
 
 El archivo:
 
@@ -1246,7 +1246,7 @@ De esta manera, el artefacto del modelo puede mantenerse asociado a sus métrica
 
 ---
 
-# 🔄 Transformaciones
+## 🔄 Transformaciones
 
 El archivo:
 
@@ -1290,7 +1290,7 @@ Mantener las mismas transformaciones durante entrenamiento y producción es fund
 
 ---
 
-# 🔗 Relación entre los archivos
+## 🔗 Relación entre los archivos
 
 Los cinco archivos forman parte de un mismo flujo operacional:
 
@@ -1321,7 +1321,7 @@ Validación del funcionamiento
 
 ---
 
-# 🧩 Organización funcional
+## 🧩 Organización funcional
 
 La función de cada archivo puede resumirse de la siguiente manera:
 
@@ -1349,7 +1349,7 @@ prueba_modelo_plantvillage.py
 
 ---
 
-# ⚙️ Flujo de inferencia
+## ⚙️ Flujo de inferencia
 
 El funcionamiento del modelo puede representarse mediante:
 
@@ -1374,7 +1374,7 @@ Resultado
 
 ---
 
-# ✅ Objetivo de esta estructura
+## ✅ Objetivo de esta estructura
 
 La separación de estos archivos permite mantener claramente diferenciadas las etapas de:
 
@@ -1389,8 +1389,185 @@ La separación de estos archivos permite mantener claramente diferenciadas las e
 Esta organización facilita la reproducibilidad del proyecto y permite utilizar el modelo dentro de una arquitectura MLOps sin depender exclusivamente del notebook de desarrollo.
 
 
-### > Trabajo
+# > Trabajo
+## 📓 Versionado de notebooks del proyecto
 
+El repositorio contiene distintas versiones del notebook principal del proyecto, utilizadas para documentar la evolución progresiva del desarrollo, correcciones, incorporación de nuevas funcionalidades y validación de resultados.
+
+```text
+.
+├── 📓 Trabajo_Final_V1.ipynb
+├── 📓 Trabajo_Final_V2.ipynb
+├── 📓 Trabajo_Final_V3.ipynb
+├── 📓 Trabajo_Final_V4.ipynb
+├── 📓 Trabajo_Final_V5.ipynb
+├── 📓 Trabajo_Final_V6.ipynb
+├── 📓 Trabajo_Final_V7.ipynb
+└── 📓 Trabajo_Final_V8.ipynb
+```
+
+---
+
+## 📁 Descripción general
+
+| Archivo | Descripción |
+|---|---|
+| `Trabajo_Final_V1.ipynb` | Primera versión del notebook principal del proyecto. |
+| `Trabajo_Final_V2.ipynb` | Segunda versión con ajustes y correcciones respecto de la versión inicial. |
+| `Trabajo_Final_V3.ipynb` | Tercera versión con incorporación progresiva de nuevas etapas del proyecto. |
+| `Trabajo_Final_V4.ipynb` | Cuarta versión con mejoras en estructura, procesamiento y documentación. |
+| `Trabajo_Final_V5.ipynb` | Quinta versión del desarrollo, incluyendo nuevas validaciones y ajustes metodológicos. |
+| `Trabajo_Final_V6.ipynb` | Sexta versión con evolución del pipeline de Machine Learning y componentes MLOps. |
+| `Trabajo_Final_V7.ipynb` | Séptima versión con refinamientos previos a la versión final. |
+| `Trabajo_Final_V8.ipynb` | Octava versión y versión más avanzada del notebook dentro de esta secuencia de desarrollo. |
+
+---
+
+## 🔄 Evolución del proyecto
+
+Las distintas versiones representan un proceso incremental de desarrollo.
+
+```text
+Trabajo_Final_V1.ipynb
+        │
+        ▼
+Trabajo_Final_V2.ipynb
+        │
+        ▼
+Trabajo_Final_V3.ipynb
+        │
+        ▼
+Trabajo_Final_V4.ipynb
+        │
+        ▼
+Trabajo_Final_V5.ipynb
+        │
+        ▼
+Trabajo_Final_V6.ipynb
+        │
+        ▼
+Trabajo_Final_V7.ipynb
+        │
+        ▼
+Trabajo_Final_V8.ipynb
+```
+
+Cada versión puede incorporar modificaciones relacionadas con:
+
+- corrección de errores;
+- reorganización de celdas;
+- mejora de celdas Markdown;
+- eliminación de código duplicado;
+- centralización de librerías;
+- ajustes del EDA;
+- mejoras en el pipeline de modelado;
+- incorporación de métricas;
+- validación de resultados;
+- integración de componentes MLOps;
+- monitoreo de Data Drift;
+- mejoras en documentación;
+- preparación de la entrega final.
+
+---
+
+## 🧪 Trabajo reproducible
+
+Mantener las diferentes versiones permite conservar trazabilidad sobre la evolución del proyecto.
+
+Esto facilita:
+
+- revisar modificaciones históricas;
+- comparar resultados entre versiones;
+- recuperar una versión anterior;
+- identificar el momento en que se incorporó una funcionalidad;
+- documentar la evolución metodológica;
+- validar cambios antes de consolidarlos en la versión final.
+
+---
+
+## 🏷️ Convención de nombres
+
+Los notebooks utilizan una nomenclatura incremental:
+
+```text
+Trabajo_Final_V1.ipynb
+Trabajo_Final_V2.ipynb
+Trabajo_Final_V3.ipynb
+...
+Trabajo_Final_V8.ipynb
+```
+
+donde:
+
+```text
+V1
+```
+
+representa la primera versión y:
+
+```text
+V8
+```
+
+representa la versión más reciente dentro de la secuencia mostrada.
+
+---
+
+## 📌 Uso recomendado
+
+Durante el desarrollo pueden conservarse las distintas versiones como respaldo histórico.
+
+Sin embargo, para una entrega final o repositorio público es recomendable identificar claramente cuál corresponde a la versión vigente.
+
+Por ejemplo:
+
+```text
+notebooks/
+├── archive/
+│   ├── Trabajo_Final_V1.ipynb
+│   ├── Trabajo_Final_V2.ipynb
+│   ├── Trabajo_Final_V3.ipynb
+│   ├── Trabajo_Final_V4.ipynb
+│   ├── Trabajo_Final_V5.ipynb
+│   ├── Trabajo_Final_V6.ipynb
+│   └── Trabajo_Final_V7.ipynb
+│
+└── Trabajo_Final_V8.ipynb
+```
+
+De esta manera:
+
+```text
+Trabajo_Final_V8.ipynb
+```
+
+queda identificado como el notebook principal, mientras que las versiones anteriores se conservan como respaldo.
+
+---
+
+## ✅ Ventajas del versionado
+
+El versionado progresivo de notebooks permite:
+
+- mantener trazabilidad;
+- comparar cambios;
+- conservar respaldos;
+- facilitar depuración;
+- documentar decisiones;
+- reducir el riesgo de pérdida de trabajo;
+- identificar la versión utilizada para generar los resultados finales.
+
+---
+
+## 🎯 Versión principal
+
+Dentro de la estructura mostrada, la versión más reciente corresponde a:
+
+```text
+Trabajo_Final_V8.ipynb
+```
+
+Esta versión puede utilizarse como referencia principal del proyecto, mientras que las versiones anteriores cumplen una función histórica y de respaldo.
 
 
 
