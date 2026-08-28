@@ -1,0 +1,205 @@
+{
+    "artifact": {
+        "name": "PlantVillage Tomato Classification",
+        "model_version": "1.0.0",
+        "metadata_schema_version": "1.0",
+        "created_at_utc": "2026-08-28T05:35:18.245620+00:00",
+        "source_notebook": "14_Topicos.ipynb",
+        "model_path": "models/model.joblib",
+        "metrics_path": "models/train_metrics.json",
+        "model_size_bytes": 99827595,
+        "model_size_mb": 95.20301342010498,
+        "model_sha256": "9ea81d650d4319a5eac45f0d60ca0fc4bc06293c733a5f88d72f11d0557ccc1a"
+    },
+    "model": {
+        "selected_model": "Random Forest",
+        "class": "RandomForestClassifier",
+        "module": "sklearn.ensemble._forest",
+        "hyperparameters": {
+            "bootstrap": true,
+            "ccp_alpha": 0.0,
+            "class_weight": null,
+            "criterion": "gini",
+            "max_depth": null,
+            "max_features": "sqrt",
+            "max_leaf_nodes": null,
+            "max_samples": null,
+            "min_impurity_decrease": 0.0,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "min_weight_fraction_leaf": 0.0,
+            "monotonic_cst": null,
+            "n_estimators": 200,
+            "n_jobs": -1,
+            "oob_score": false,
+            "random_state": 42,
+            "verbose": 0,
+            "warm_start": false
+        }
+    },
+    "pipeline": {
+        "steps": [
+            {
+                "name": "preprocessor",
+                "class": "ColumnTransformer",
+                "module": "sklearn.compose._column_transformer"
+            },
+            {
+                "name": "model",
+                "class": "RandomForestClassifier",
+                "module": "sklearn.ensemble._forest"
+            }
+        ],
+        "input_feature_count": 15,
+        "transformed_feature_count": 16,
+        "feature_engineering": [
+            "h_mean -> h_sin + h_cos",
+            "laplacian_variance -> laplacian_log1p"
+        ],
+        "numeric_imputer": "median",
+        "scaler": "StandardScaler",
+        "categorical_features": []
+    },
+    "features": {
+        "input": [
+            "r_mean",
+            "g_mean",
+            "b_mean",
+            "r_std",
+            "g_std",
+            "b_std",
+            "h_mean",
+            "s_mean",
+            "v_mean",
+            "excess_green",
+            "brightness_mean",
+            "contrast_std",
+            "laplacian_variance",
+            "entropy",
+            "edge_density"
+        ],
+        "transformed": [
+            "num__r_mean",
+            "num__g_mean",
+            "num__b_mean",
+            "num__r_std",
+            "num__g_std",
+            "num__b_std",
+            "num__s_mean",
+            "num__v_mean",
+            "num__excess_green",
+            "num__brightness_mean",
+            "num__contrast_std",
+            "num__entropy",
+            "num__edge_density",
+            "num__h_sin",
+            "num__h_cos",
+            "num__laplacian_log1p"
+        ]
+    },
+    "target": {
+        "name": "clase",
+        "problem_type": "multiclass_classification",
+        "n_classes": 10,
+        "classes": [
+            "Tomato___Bacterial_spot",
+            "Tomato___Early_blight",
+            "Tomato___Late_blight",
+            "Tomato___Leaf_Mold",
+            "Tomato___Septoria_leaf_spot",
+            "Tomato___Spider_mites Two-spotted_spider_mite",
+            "Tomato___Target_Spot",
+            "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+            "Tomato___Tomato_mosaic_virus",
+            "Tomato___healthy"
+        ]
+    },
+    "dataset": {
+        "name": "PlantVillage",
+        "n_total": 18146,
+        "n_train": 12702,
+        "n_validation": 2722,
+        "n_test": 2722,
+        "dataset_sha256": "daca7ab426b675cb46aed44bd97fe1c65672e57c167c7b0e32a3f61535c5ee90"
+    },
+    "training_protocol": {
+        "split_strategy": "random_stratified",
+        "train_fraction": 0.7,
+        "validation_fraction": 0.15,
+        "test_fraction": 0.15,
+        "random_state": 42,
+        "cross_validation": {
+            "type": "StratifiedKFold",
+            "n_splits": 3,
+            "shuffle": true
+        },
+        "primary_metric": "f1_macro"
+    },
+    "baseline_validation": {
+        "accuracy": 0.29537105069801617,
+        "precision_macro": 0.029537105069801617,
+        "recall_macro": 0.1,
+        "f1_macro": 0.04560408394781622,
+        "balanced_accuracy": 0.1
+    },
+    "metrics_cross_validation": {
+        "accuracy_mean": 0.8371122657849158,
+        "accuracy_std": 0.0010650093889520557,
+        "f1_macro_mean": 0.8049810320947137,
+        "f1_macro_std": 0.002286298332606297,
+        "balanced_accuracy_mean": 0.792010275034813,
+        "balanced_accuracy_std": 0.003500882376120392
+    },
+    "metrics_validation": {
+        "accuracy": 0.8420279206465834,
+        "precision_macro": 0.8267903118051867,
+        "recall_macro": 0.7974618362159788,
+        "f1_macro": 0.809190350938643,
+        "f1_weighted": 0.8386109127412713,
+        "balanced_accuracy": 0.7974618362159788,
+        "roc_auc_macro_ovr": 0.9813740090281499,
+        "roc_auc_weighted_ovr": 0.9826337864333125
+    },
+    "metrics_test_final": {
+        "accuracy": 0.8526818515797208,
+        "precision_macro": 0.8442732241129164,
+        "recall_macro": 0.8177183534093123,
+        "f1_macro": 0.8274267572538525,
+        "f1_weighted": 0.8499666893786152,
+        "balanced_accuracy": 0.8177183534093123,
+        "roc_auc_macro_ovr": 0.9846768326512392,
+        "roc_auc_weighted_ovr": 0.9853638606907097
+    },
+    "operational": {
+        "training_time_seconds": 12.938198339999872,
+        "validation_prediction_seconds": 0.10506452400022681,
+        "prediction_ms_per_observation": 0.038598282145564586,
+        "packaging_validation_agreement": 1.0,
+        "packaging_test_agreement": 1.0
+    },
+    "interpretability": {
+        "nivel": "Media",
+        "metodos": [
+            "feature_importances_",
+            "permutation_importance"
+        ],
+        "shap": "No ejecutado; opcional",
+        "feature_importance_top": {
+            "feature": "laplacian_log1p",
+            "importance": 0.12879183402358232
+        },
+        "permutation_importance_top": {
+            "feature": "h_mean",
+            "importance_mean": 0.23190470996446164,
+            "importance_std": 0.012904578532972263
+        }
+    },
+    "environment": {
+        "python": "3.13.15",
+        "numpy": "2.1.3",
+        "pandas": "2.2.3",
+        "scikit_learn": "1.6.1",
+        "scipy": "1.16.3",
+        "joblib": "1.5.3"
+    }
+}

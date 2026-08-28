@@ -1,0 +1,61 @@
+Ventana,Feature,PSI,Estado_PSI,N_bins_objetivo,Referencia,Umbral_warning,Umbral_drift
+W1,contrast_std,0.07655987288636591,Normal,10,W0,0.1,0.2
+W1,brightness_mean,0.0694569293267548,Normal,10,W0,0.1,0.2
+W1,r_std,0.06411817079664185,Normal,10,W0,0.1,0.2
+W1,v_mean,0.061964790063137314,Normal,10,W0,0.1,0.2
+W1,entropy,0.059843210409507804,Normal,10,W0,0.1,0.2
+W1,r_mean,0.057028502579906756,Normal,10,W0,0.1,0.2
+W1,h_mean,0.051198371208088574,Normal,10,W0,0.1,0.2
+W1,b_mean,0.05009135716761112,Normal,10,W0,0.1,0.2
+W1,g_mean,0.043148609004757976,Normal,10,W0,0.1,0.2
+W1,b_std,0.04189444427763604,Normal,10,W0,0.1,0.2
+W1,s_mean,0.03807343758169259,Normal,10,W0,0.1,0.2
+W1,g_std,0.03773134013923246,Normal,10,W0,0.1,0.2
+W1,excess_green,0.03753725504033198,Normal,10,W0,0.1,0.2
+W1,laplacian_variance,0.02655073247653443,Normal,10,W0,0.1,0.2
+W1,edge_density,0.012050652228570661,Normal,10,W0,0.1,0.2
+W2,h_mean,0.27676027146625626,Drift significativo,10,W0,0.1,0.2
+W2,laplacian_variance,0.21644091832073753,Drift significativo,10,W0,0.1,0.2
+W2,edge_density,0.16171253191847576,Warning,10,W0,0.1,0.2
+W2,brightness_mean,0.12878135779494096,Warning,10,W0,0.1,0.2
+W2,g_std,0.1286453812957433,Warning,10,W0,0.1,0.2
+W2,contrast_std,0.12004907006375375,Warning,10,W0,0.1,0.2
+W2,s_mean,0.11660347051034191,Warning,10,W0,0.1,0.2
+W2,entropy,0.11515816984508345,Warning,10,W0,0.1,0.2
+W2,v_mean,0.10531654336505983,Warning,10,W0,0.1,0.2
+W2,b_mean,0.08402776392770282,Normal,10,W0,0.1,0.2
+W2,excess_green,0.07488243658415362,Normal,10,W0,0.1,0.2
+W2,r_mean,0.07204603482123251,Normal,10,W0,0.1,0.2
+W2,g_mean,0.053358548316107805,Normal,10,W0,0.1,0.2
+W2,b_std,0.05046223708465328,Normal,10,W0,0.1,0.2
+W2,r_std,0.049463498145931734,Normal,10,W0,0.1,0.2
+W3,edge_density,1.4611860753920787,Drift significativo,10,W0,0.1,0.2
+W3,h_mean,1.3053994218274108,Drift significativo,10,W0,0.1,0.2
+W3,laplacian_variance,0.7717437780392585,Drift significativo,10,W0,0.1,0.2
+W3,entropy,0.5120807815449563,Drift significativo,10,W0,0.1,0.2
+W3,v_mean,0.35632201472076874,Drift significativo,10,W0,0.1,0.2
+W3,excess_green,0.3444652607105042,Drift significativo,10,W0,0.1,0.2
+W3,g_std,0.28812431586786175,Drift significativo,10,W0,0.1,0.2
+W3,brightness_mean,0.23274385429440048,Drift significativo,10,W0,0.1,0.2
+W3,contrast_std,0.20257734219882778,Drift significativo,10,W0,0.1,0.2
+W3,r_mean,0.198225513841065,Warning,10,W0,0.1,0.2
+W3,b_std,0.16799109417351765,Warning,10,W0,0.1,0.2
+W3,r_std,0.12835795496309954,Warning,10,W0,0.1,0.2
+W3,g_mean,0.12494426740529575,Warning,10,W0,0.1,0.2
+W3,s_mean,0.11814854609843543,Warning,10,W0,0.1,0.2
+W3,b_mean,0.09841199892691849,Normal,10,W0,0.1,0.2
+W4,edge_density,3.986665599487426,Drift significativo,10,W0,0.1,0.2
+W4,entropy,2.95616762181223,Drift significativo,10,W0,0.1,0.2
+W4,h_mean,2.4771238178259454,Drift significativo,10,W0,0.1,0.2
+W4,laplacian_variance,1.789289249821858,Drift significativo,10,W0,0.1,0.2
+W4,g_std,0.8006905578113759,Drift significativo,10,W0,0.1,0.2
+W4,v_mean,0.7591441993033305,Drift significativo,10,W0,0.1,0.2
+W4,excess_green,0.7212675242212796,Drift significativo,10,W0,0.1,0.2
+W4,r_mean,0.6736540788861038,Drift significativo,10,W0,0.1,0.2
+W4,r_std,0.6699687319950168,Drift significativo,10,W0,0.1,0.2
+W4,brightness_mean,0.6649605957033764,Drift significativo,10,W0,0.1,0.2
+W4,b_std,0.6084651739170531,Drift significativo,10,W0,0.1,0.2
+W4,contrast_std,0.5415908290384663,Drift significativo,10,W0,0.1,0.2
+W4,g_mean,0.4609861782371252,Drift significativo,10,W0,0.1,0.2
+W4,b_mean,0.2560683504627631,Drift significativo,10,W0,0.1,0.2
+W4,s_mean,0.21516344939088197,Drift significativo,10,W0,0.1,0.2

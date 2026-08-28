@@ -1,0 +1,51 @@
+Clase,Ventana,Proporcion,Porcentaje
+Tomato___Bacterial_spot,W0,0.118,11.799999999999999
+Tomato___Early_blight,W0,0.056,5.6000000000000005
+Tomato___Late_blight,W0,0.104,10.4
+Tomato___Leaf_Mold,W0,0.052,5.2
+Tomato___Septoria_leaf_spot,W0,0.098,9.8
+Tomato___Spider_mites Two-spotted_spider_mite,W0,0.092,9.2
+Tomato___Target_Spot,W0,0.078,7.8
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,W0,0.294,29.4
+Tomato___Tomato_mosaic_virus,W0,0.02,2.0
+Tomato___healthy,W0,0.088,8.799999999999999
+Tomato___Bacterial_spot,W1,0.118,11.799999999999999
+Tomato___Early_blight,W1,0.056,5.6000000000000005
+Tomato___Late_blight,W1,0.104,10.4
+Tomato___Leaf_Mold,W1,0.052,5.2
+Tomato___Septoria_leaf_spot,W1,0.098,9.8
+Tomato___Spider_mites Two-spotted_spider_mite,W1,0.09,9.0
+Tomato___Target_Spot,W1,0.078,7.8
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,W1,0.296,29.599999999999998
+Tomato___Tomato_mosaic_virus,W1,0.02,2.0
+Tomato___healthy,W1,0.088,8.799999999999999
+Tomato___Bacterial_spot,W2,0.122,12.2
+Tomato___Early_blight,W2,0.056,5.6000000000000005
+Tomato___Late_blight,W2,0.11,11.0
+Tomato___Leaf_Mold,W2,0.052,5.2
+Tomato___Septoria_leaf_spot,W2,0.078,7.8
+Tomato___Spider_mites Two-spotted_spider_mite,W2,0.08,8.0
+Tomato___Target_Spot,W2,0.062,6.2
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,W2,0.32,32.0
+Tomato___Tomato_mosaic_virus,W2,0.014,1.4000000000000001
+Tomato___healthy,W2,0.106,10.6
+Tomato___Bacterial_spot,W3,0.086,8.6
+Tomato___Early_blight,W3,0.034,3.4000000000000004
+Tomato___Late_blight,W3,0.102,10.2
+Tomato___Leaf_Mold,W3,0.038,3.8
+Tomato___Septoria_leaf_spot,W3,0.086,8.6
+Tomato___Spider_mites Two-spotted_spider_mite,W3,0.08,8.0
+Tomato___Target_Spot,W3,0.054,5.4
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,W3,0.436,43.6
+Tomato___Tomato_mosaic_virus,W3,0.018,1.7999999999999998
+Tomato___healthy,W3,0.066,6.6000000000000005
+Tomato___Bacterial_spot,W4,0.086,8.6
+Tomato___Early_blight,W4,0.03,3.0
+Tomato___Late_blight,W4,0.078,7.8
+Tomato___Leaf_Mold,W4,0.038,3.8
+Tomato___Septoria_leaf_spot,W4,0.086,8.6
+Tomato___Spider_mites Two-spotted_spider_mite,W4,0.058,5.800000000000001
+Tomato___Target_Spot,W4,0.058,5.800000000000001
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,W4,0.504,50.4
+Tomato___Tomato_mosaic_virus,W4,0.016,1.6
+Tomato___healthy,W4,0.046,4.6

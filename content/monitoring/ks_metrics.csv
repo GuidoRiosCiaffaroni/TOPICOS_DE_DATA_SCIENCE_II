@@ -1,0 +1,61 @@
+Ventana,Feature,KS_statistic,p_value,Magnitud_KS,Significativo_raw,Alpha,Referencia,p_value_fdr,Significativo_FDR,Interpretacion_KS
+W1,brightness_mean,0.112,0.003751031948977854,Moderada,True,0.05,W0,0.005770818383042852,True,Cambio moderado con evidencia estadística
+W1,v_mean,0.09,0.03479508043637821,Baja,True,0.05,W0,0.048551275027504476,True,"Diferencia estadísticamente significativa, pero de magnitud baja"
+W1,r_mean,0.082,0.06930076569272504,Baja,False,0.05,W0,0.09240102092363338,False,Sin evidencia relevante de cambio
+W1,g_mean,0.08,0.08150167321107067,Baja,False,0.05,W0,0.10404468920562213,False,Sin evidencia relevante de cambio
+W1,b_mean,0.074,0.12939616996710074,Baja,False,0.05,W0,0.16174521245887594,False,Sin evidencia relevante de cambio
+W1,excess_green,0.058,0.3699050405997647,Baja,False,0.05,W0,0.44388604871971765,False,Sin evidencia relevante de cambio
+W1,g_std,0.056,0.41348608403425674,Baja,False,0.05,W0,0.4680974536236869,False,Sin evidencia relevante de cambio
+W1,contrast_std,0.056,0.41348608403425674,Baja,False,0.05,W0,0.4680974536236869,False,Sin evidencia relevante de cambio
+W1,b_std,0.052,0.5089169658042532,Baja,False,0.05,W0,0.5551821445137307,False,Sin evidencia relevante de cambio
+W1,h_mean,0.052,0.5089169658042532,Baja,False,0.05,W0,0.5551821445137307,False,Sin evidencia relevante de cambio
+W1,s_mean,0.05,0.5600220048872044,Baja,False,0.05,W0,0.5894968472496889,False,Sin evidencia relevante de cambio
+W1,entropy,0.05,0.5600220048872044,Baja,False,0.05,W0,0.5894968472496889,False,Sin evidencia relevante de cambio
+W1,laplacian_variance,0.044,0.7189191850204419,Baja,False,0.05,W0,0.7437095017452848,False,Sin evidencia relevante de cambio
+W1,r_std,0.036,0.9026912216773312,Baja,False,0.05,W0,0.9026912216773312,False,Sin evidencia relevante de cambio
+W1,edge_density,0.036,0.9026912216773312,Baja,False,0.05,W0,0.9026912216773312,False,Sin evidencia relevante de cambio
+W2,laplacian_variance,0.232,3.2970936450072955e-12,Alta,True,0.05,W0,1.1636801100025749e-11,True,Cambio distributivo alto y estadísticamente significativo
+W2,h_mean,0.168,1.4103236484921267e-06,Moderada,True,0.05,W0,3.1340525522047258e-06,True,Cambio moderado con evidencia estadística
+W2,brightness_mean,0.164,2.7547859124150135e-06,Moderada,True,0.05,W0,5.903112669460743e-06,True,Cambio moderado con evidencia estadística
+W2,v_mean,0.152,1.860514654705759e-05,Moderada,True,0.05,W0,3.721029309411518e-05,True,Cambio moderado con evidencia estadística
+W2,r_mean,0.138,0.0001434246303518553,Moderada,True,0.05,W0,0.0002689211819097287,True,Cambio moderado con evidencia estadística
+W2,b_mean,0.134,0.00024780650250526786,Moderada,True,0.05,W0,0.00045055727728230517,True,Cambio moderado con evidencia estadística
+W2,s_mean,0.128,0.0005458774578140435,Moderada,True,0.05,W0,0.0009357899276812173,True,Cambio moderado con evidencia estadística
+W2,edge_density,0.12,0.001478117952199697,Moderada,True,0.05,W0,0.002463529920332828,True,Cambio moderado con evidencia estadística
+W2,entropy,0.118,0.0018769751767371433,Moderada,True,0.05,W0,0.003043743529844016,True,Cambio moderado con evidencia estadística
+W2,g_std,0.108,0.005832082533064598,Moderada,True,0.05,W0,0.008748123799596897,True,Cambio moderado con evidencia estadística
+W2,contrast_std,0.09,0.03479508043637821,Baja,True,0.05,W0,0.048551275027504476,True,"Diferencia estadísticamente significativa, pero de magnitud baja"
+W2,excess_green,0.088,0.04158607858587287,Baja,True,0.05,W0,0.05670828898073574,False,Sin evidencia relevante de cambio
+W2,b_std,0.08,0.08150167321107067,Baja,False,0.05,W0,0.10404468920562213,False,Sin evidencia relevante de cambio
+W2,r_std,0.066,0.22634729051389657,Baja,False,0.05,W0,0.27715994756803664,False,Sin evidencia relevante de cambio
+W2,g_mean,0.056,0.41348608403425674,Baja,False,0.05,W0,0.4680974536236869,False,Sin evidencia relevante de cambio
+W3,laplacian_variance,0.444,1.0241601727710953e-44,Alta,True,0.05,W0,2.0483203455421906e-43,True,Cambio distributivo alto y estadísticamente significativo
+W3,h_mean,0.364,7.746558549276895e-30,Alta,True,0.05,W0,7.746558549276895e-29,True,Cambio distributivo alto y estadísticamente significativo
+W3,brightness_mean,0.234,2.0519999346560805e-12,Alta,True,0.05,W0,7.694999754960302e-12,True,Cambio distributivo alto y estadísticamente significativo
+W3,v_mean,0.23,5.2753498320116724e-12,Alta,True,0.05,W0,1.7584499440038907e-11,True,Cambio distributivo alto y estadísticamente significativo
+W3,entropy,0.224,2.106809320880401e-11,Alta,True,0.05,W0,6.653082065938108e-11,True,Cambio distributivo alto y estadísticamente significativo
+W3,g_std,0.206,1.0697285962248264e-09,Alta,True,0.05,W0,3.0563674177852185e-09,True,Cambio distributivo alto y estadísticamente significativo
+W3,edge_density,0.204,1.6207194560893726e-09,Alta,True,0.05,W0,4.420143971152834e-09,True,Cambio distributivo alto y estadísticamente significativo
+W3,r_mean,0.194,1.2154852887009729e-08,Moderada,True,0.05,W0,3.170831187915581e-08,True,Cambio moderado con evidencia estadística
+W3,excess_green,0.186,5.6534932411175595e-08,Moderada,True,0.05,W0,1.4133733102793898e-07,True,Cambio moderado con evidencia estadística
+W3,b_std,0.178,2.4610680377802874e-07,Moderada,True,0.05,W0,5.679387779492971e-07,True,Cambio moderado con evidencia estadística
+W3,contrast_std,0.154,1.3671719473054452e-05,Moderada,True,0.05,W0,2.8286316151147145e-05,True,Cambio moderado con evidencia estadística
+W3,b_mean,0.14,0.00010844915031869944,Moderada,True,0.05,W0,0.00020990158126199892,True,Cambio moderado con evidencia estadística
+W3,g_mean,0.132,0.0003237472048853522,Moderada,True,0.05,W0,0.0005713185968565039,True,Cambio moderado con evidencia estadística
+W3,s_mean,0.114,0.00299005061044668,Moderada,True,0.05,W0,0.004721132542810547,True,Cambio moderado con evidencia estadística
+W3,r_std,0.104,0.008922221390371415,Moderada,True,0.05,W0,0.013056909351763048,True,Cambio moderado con evidencia estadística
+W4,laplacian_variance,0.598,1.9488038001756452e-83,Alta,True,0.05,W0,1.169282280105387e-81,True,Cambio distributivo alto y estadísticamente significativo
+W4,h_mean,0.512,4.481279870325153e-60,Alta,True,0.05,W0,1.3443839610975459e-58,True,Cambio distributivo alto y estadísticamente significativo
+W4,edge_density,0.37,7.7110744386245675e-31,Alta,True,0.05,W0,1.1566611657936851e-29,True,Cambio distributivo alto y estadísticamente significativo
+W4,entropy,0.368,1.6715461995119712e-30,Alta,True,0.05,W0,2.0058554394143655e-29,True,Cambio distributivo alto y estadísticamente significativo
+W4,v_mean,0.356,1.5744084636023734e-28,Alta,True,0.05,W0,1.3494929688020344e-27,True,Cambio distributivo alto y estadísticamente significativo
+W4,brightness_mean,0.328,3.3583913478618886e-24,Alta,True,0.05,W0,2.5187935108964165e-23,True,Cambio distributivo alto y estadísticamente significativo
+W4,b_std,0.326,6.617127166113632e-24,Alta,True,0.05,W0,4.4114181107424214e-23,True,Cambio distributivo alto y estadísticamente significativo
+W4,excess_green,0.318,9.537547178030926e-23,Alta,True,0.05,W0,5.722528306818556e-22,True,Cambio distributivo alto y estadísticamente significativo
+W4,g_std,0.314,3.525557330769207e-22,Alta,True,0.05,W0,1.9230312713286585e-21,True,Cambio distributivo alto y estadísticamente significativo
+W4,r_mean,0.31,1.2803227208484007e-21,Alta,True,0.05,W0,6.401613604242004e-21,True,Cambio distributivo alto y estadísticamente significativo
+W4,g_mean,0.284,3.644777735190423e-18,Alta,True,0.05,W0,1.6822051085494258e-17,True,Cambio distributivo alto y estadísticamente significativo
+W4,r_std,0.274,6.383314923658339e-17,Alta,True,0.05,W0,2.735706395853574e-16,True,Cambio distributivo alto y estadísticamente significativo
+W4,contrast_std,0.266,5.833972860643141e-16,Alta,True,0.05,W0,2.3335891442572566e-15,True,Cambio distributivo alto y estadísticamente significativo
+W4,b_mean,0.208,7.031163124192981e-10,Alta,True,0.05,W0,2.1093489372578944e-09,True,Cambio distributivo alto y estadísticamente significativo
+W4,s_mean,0.184,8.2169644411341e-08,Moderada,True,0.05,W0,1.972071465872184e-07,True,Cambio moderado con evidencia estadística

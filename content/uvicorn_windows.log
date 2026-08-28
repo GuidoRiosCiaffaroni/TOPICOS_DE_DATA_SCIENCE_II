@@ -1,0 +1,12 @@
+INFO:     Started server process [12937]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:35818 - "GET /windows HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35832 - "GET /windows/W0?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35836 - "GET /windows/W1?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35844 - "GET /windows/W2?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35860 - "GET /windows/W3?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35868 - "GET /windows/W4?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44996 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45006 - "GET /openapi.json HTTP/1.1" 200 OK

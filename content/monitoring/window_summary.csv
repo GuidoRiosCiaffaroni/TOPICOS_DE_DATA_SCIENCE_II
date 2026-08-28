@@ -1,0 +1,6 @@
+Ventana,Estado_general,Normal,Warning,Drift significativo,Performance,Elementos_alerta
+W0,Referencia,,,,1.0,No aplica — ventana de referencia
+W1,Warning,15.0,1.0,0.0,0.8143231444477278,brightness_mean
+W2,Drift significativo,5.0,9.0,2.0,0.6992772957652785,"b_mean, brightness_mean, contrast_std, edge_density, entropy, g_std, h_mean, laplacian_variance, r_mean, s_mean, v_mean"
+W3,Drift significativo,0.0,7.0,9.0,0.536040979213176,"TARGET, b_mean, b_std, brightness_mean, contrast_std, edge_density, entropy, excess_green, g_mean, g_std, h_mean, laplacian_variance, r_mean, r_std, s_mean, v_mean"
+W4,Drift significativo,0.0,1.0,15.0,0.2778529106665682,"TARGET, b_mean, b_std, brightness_mean, contrast_std, edge_density, entropy, excess_green, g_mean, g_std, h_mean, laplacian_variance, r_mean, r_std, s_mean, v_mean"
