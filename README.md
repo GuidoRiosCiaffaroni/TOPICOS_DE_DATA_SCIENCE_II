@@ -872,11 +872,9 @@ No ignore `models/model.joblib` ni las ventanas necesarias para la demo si el re
 
 ### Autores
 
-- Nombre del integrante 1 — correo institucional.
-- Nombre del integrante 2 — correo institucional.
-- Nombre del integrante 3 — correo institucional.
-- Nombre del integrante 4 — correo institucional.
-
+- Guido Ríos Ciaffaroni — guidoriosciaffaroni@gmail.com
+- Eduardo Opazo DiaZ — edoopazod@gmail.com
+.
 Reemplace esta lista por los datos reales del grupo.
 
 ### Curso
@@ -885,10 +883,5 @@ Reemplace esta lista por los datos reales del grupo.
 - Asignatura: Tópicos en Data Science II.
 - Evaluación: Proyecto final MLOps local con monitoreo de Data Drift.
 
-### Licencia
 
-Incorpore la licencia acordada por el grupo y compatible con las condiciones del dataset. Si no se ha definido una licencia, no asuma que el repositorio puede reutilizarse libremente.
 
-### Uso responsable
-
-Este proyecto tiene fines académicos. Las predicciones no deben utilizarse como diagnóstico definitivo ni como única base para decisiones agrícolas de alto impacto.
