@@ -875,7 +875,6 @@ No ignore `models/model.joblib` ni las ventanas necesarias para la demo si el re
 - Guido Ríos Ciaffaroni — guidoriosciaffaroni@gmail.com
 - Eduardo Opazo DiaZ — edoopazod@gmail.com
 .
-Reemplace esta lista por los datos reales del grupo.
 
 ### Curso
 
