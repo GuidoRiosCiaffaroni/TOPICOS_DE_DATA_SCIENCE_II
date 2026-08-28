@@ -1,0 +1,3 @@
+timestamp_utc,request_id,ventana,estado_drift,status,prioridad,performance_f1_macro,n_alertas_significativas,approved
+2026-08-28T07:23:10.813836+00:00,720489cf42ef2ec4c36d86dd8c739b54db3743483414c51c654a34258f9647c3,W4,Drift significativo,pending_review,Alta,0.2778529106665682,29,False
+2026-08-28T07:25:21.207296+00:00,720489cf42ef2ec4c36d86dd8c739b54db3743483414c51c654a34258f9647c3,W4,Drift significativo,approved_for_retraining,Alta,0.2778529106665682,29,True

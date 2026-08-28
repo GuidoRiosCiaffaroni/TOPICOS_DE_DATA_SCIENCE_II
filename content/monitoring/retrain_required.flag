@@ -1,0 +1,282 @@
+{
+    "action_required": "Revisar calidad de datos, disponibilidad del target, deterioro de performance y viabilidad del reentrenamiento antes de modificar el modelo campeón.",
+    "alert_keys": [
+        "080776e589da7160",
+        "0e8d2ce209a9f10a",
+        "46d1d177f250582f",
+        "4f273d55a973db14",
+        "507301be1560c27a",
+        "519bc3804645b5d8",
+        "523556cc5b2f899f",
+        "5485a7abe1a46b0d",
+        "54d890e661419d9e",
+        "5ececeb264b879a6",
+        "7463331aedae28f3",
+        "7496e094d9dc0ab5",
+        "753f8ac8bf8a5c50",
+        "7ff4e0239fa1c43c",
+        "8a34014476e3b207",
+        "9352cd5ba56482ff",
+        "965b6b3805a0eba6",
+        "98ab425e143aac1d",
+        "99763e62bda22774",
+        "9c746fe825345c56",
+        "a1a501daf6902ef0",
+        "a67442481431d7bf",
+        "bbabbbd188c348a7",
+        "c11d2bbc7b89ead0",
+        "c630512f4e5dca30",
+        "cbcf66df1d20a468",
+        "d2f4a593e1f0952c",
+        "e61877149e9e7fa9",
+        "f866ea0de5e6199d"
+    ],
+    "approved": true,
+    "approved_at_utc": "2026-08-28T07:25:21.202950+00:00",
+    "created_at_utc": "2026-08-28T07:20:07.504831+00:00",
+    "detalle_alertas": [
+        {
+            "alert_key": "bbabbbd188c348a7",
+            "feature": "b_mean",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.2560683504627631
+        },
+        {
+            "alert_key": "54d890e661419d9e",
+            "feature": "b_mean",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.208
+        },
+        {
+            "alert_key": "4f273d55a973db14",
+            "feature": "b_std",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.6084651739170531
+        },
+        {
+            "alert_key": "c630512f4e5dca30",
+            "feature": "b_std",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.326
+        },
+        {
+            "alert_key": "5485a7abe1a46b0d",
+            "feature": "brightness_mean",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.6649605957033764
+        },
+        {
+            "alert_key": "965b6b3805a0eba6",
+            "feature": "brightness_mean",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.328
+        },
+        {
+            "alert_key": "e61877149e9e7fa9",
+            "feature": "contrast_std",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.5415908290384663
+        },
+        {
+            "alert_key": "a1a501daf6902ef0",
+            "feature": "contrast_std",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.266
+        },
+        {
+            "alert_key": "507301be1560c27a",
+            "feature": "edge_density",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 3.986665599487426
+        },
+        {
+            "alert_key": "99763e62bda22774",
+            "feature": "edge_density",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.37
+        },
+        {
+            "alert_key": "5ececeb264b879a6",
+            "feature": "entropy",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 2.95616762181223
+        },
+        {
+            "alert_key": "8a34014476e3b207",
+            "feature": "entropy",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.368
+        },
+        {
+            "alert_key": "9c746fe825345c56",
+            "feature": "excess_green",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.7212675242212796
+        },
+        {
+            "alert_key": "519bc3804645b5d8",
+            "feature": "excess_green",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.318
+        },
+        {
+            "alert_key": "f866ea0de5e6199d",
+            "feature": "g_mean",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.4609861782371252
+        },
+        {
+            "alert_key": "523556cc5b2f899f",
+            "feature": "g_mean",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.284
+        },
+        {
+            "alert_key": "98ab425e143aac1d",
+            "feature": "g_std",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.8006905578113759
+        },
+        {
+            "alert_key": "753f8ac8bf8a5c50",
+            "feature": "g_std",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.314
+        },
+        {
+            "alert_key": "080776e589da7160",
+            "feature": "h_mean",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 2.4771238178259454
+        },
+        {
+            "alert_key": "46d1d177f250582f",
+            "feature": "h_mean",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.512
+        },
+        {
+            "alert_key": "9352cd5ba56482ff",
+            "feature": "laplacian_variance",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 1.789289249821858
+        },
+        {
+            "alert_key": "cbcf66df1d20a468",
+            "feature": "laplacian_variance",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.598
+        },
+        {
+            "alert_key": "a67442481431d7bf",
+            "feature": "r_mean",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.6736540788861038
+        },
+        {
+            "alert_key": "7463331aedae28f3",
+            "feature": "r_mean",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.31
+        },
+        {
+            "alert_key": "0e8d2ce209a9f10a",
+            "feature": "r_std",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.6699687319950168
+        },
+        {
+            "alert_key": "c11d2bbc7b89ead0",
+            "feature": "r_std",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.274
+        },
+        {
+            "alert_key": "7ff4e0239fa1c43c",
+            "feature": "s_mean",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.2151634493908819
+        },
+        {
+            "alert_key": "d2f4a593e1f0952c",
+            "feature": "v_mean",
+            "metrica": "PSI",
+            "umbral": 0.2,
+            "valor": 0.7591441993033305
+        },
+        {
+            "alert_key": "7496e094d9dc0ab5",
+            "feature": "v_mean",
+            "metrica": "KS",
+            "umbral": 0.2,
+            "valor": 0.356
+        }
+    ],
+    "estado": "Drift significativo",
+    "features_afectadas": [
+        "b_mean",
+        "b_std",
+        "brightness_mean",
+        "contrast_std",
+        "edge_density",
+        "entropy",
+        "excess_green",
+        "g_mean",
+        "g_std",
+        "h_mean",
+        "laplacian_variance",
+        "r_mean",
+        "r_std",
+        "s_mean",
+        "v_mean"
+    ],
+    "metricas_activadoras": [
+        "KS",
+        "PSI"
+    ],
+    "mode": "semi-automatic",
+    "model_exists": true,
+    "model_path": "models/model.joblib",
+    "n_alertas_significativas": 29,
+    "n_alertas_ventana": 31,
+    "next_command": "python src/retrain.py --check",
+    "next_step": "Construir un modelo candidato con datos validados y compararlo contra el campeón. No promover automáticamente.",
+    "performance_f1_macro": 0.2778529106665682,
+    "prioridad": "Alta",
+    "request_id": "720489cf42ef2ec4c36d86dd8c739b54db3743483414c51c654a34258f9647c3",
+    "required": true,
+    "review_required": true,
+    "schema_version": "1.0",
+    "source_alerts": "monitoring/alerts.csv",
+    "status": "approved_for_retraining",
+    "train_metrics_exists": true,
+    "train_metrics_path": "models/train_metrics.json",
+    "ventana": "W4"
+}
