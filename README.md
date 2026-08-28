@@ -1,5 +1,22 @@
 # MLOps local para clasificación de enfermedades foliares con monitoreo de Data Drift
 
+
+### Autores
+
+- Guido Ríos Ciaffaroni — guidoriosciaffaroni@gmail.com
+- Eduardo Opazo DiaZ — edoopazod@gmail.com
+.
+
+### Curso
+
+- Programa: Magíster en Ciencia de Datos.
+- Asignatura: Tópicos en Data Science II.
+- Evaluación: Proyecto final MLOps local con monitoreo de Data Drift.
+
+### https://github.com/GuidoRiosCiaffaroni/TOPICOS_DE_DATA_SCIENCE_II
+
+
+
 Prototipo reproducible de MLOps local para clasificar enfermedades foliares del tomate a partir de descriptores visuales extraídos de imágenes de PlantVillage. El sistema entrena y empaqueta un modelo de Machine Learning, expone inferencias mediante FastAPI, registra predicciones, simula ventanas de producción con drift creciente, calcula métricas de monitoreo, presenta un dashboard Streamlit y genera un gatillo semiautomático de evaluación de reentrenamiento.
 
 > Proyecto final de **Tópicos en Data Science II — Magíster en Ciencia de Datos**.
@@ -868,19 +885,7 @@ data/processed/images/
 
 No ignore `models/model.joblib` ni las ventanas necesarias para la demo si el repositorio debe funcionar sin reconstrucción completa. Verifique previamente las restricciones de tamaño de Git.
 
-## 21. Autores y licencia
 
-### Autores
-
-- Guido Ríos Ciaffaroni — guidoriosciaffaroni@gmail.com
-- Eduardo Opazo DiaZ — edoopazod@gmail.com
-.
-
-### Curso
-
-- Programa: Magíster en Ciencia de Datos.
-- Asignatura: Tópicos en Data Science II.
-- Evaluación: Proyecto final MLOps local con monitoreo de Data Drift.
 
 
 
