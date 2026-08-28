@@ -339,6 +339,1062 @@ proyecto_mlops_drift/
     `-- test_drift.py
 ```
 
+### Estructura de los directorios
+
+### > content
+# 📁 Estructura del proyecto MLOps
+
+La estructura principal del proyecto se organiza de la siguiente manera:
+
+```text
+.
+├── 📁 .config/
+├── 📁 __pycache__/
+├── 📁 api/
+├── 📁 dashboard/
+├── 📁 data/
+├── 📁 mlruns/
+├── 📁 models/
+├── 📁 monitoring/
+├── 📁 plantvillage/
+├── 📁 sample_data/
+├── 📁 src/
+│
+├── 📄 app.py
+├── 📊 informe_integridad_plantvillage.csv
+├── 📄 streamlit_dashboard.log
+├── 📄 streamlit_dashboard.pid
+├── 📄 uvicorn.log
+├── 📄 uvicorn.pid
+├── 📄 uvicorn_windows.log
+└── 📄 uvicorn_windows.pid
+```
+
+---
+
+## 📂 Descripción de directorios
+
+| Directorio | Descripción |
+|---|---|
+| `.config/` | Contiene archivos de configuración generados por el entorno de ejecución. |
+| `__pycache__/` | Contiene archivos compilados automáticamente por Python durante la ejecución de los módulos. |
+| `api/` | Contiene los componentes relacionados con la API de inferencia del modelo. |
+| `dashboard/` | Contiene los archivos utilizados para la construcción y ejecución del dashboard de monitoreo. |
+| `data/` | Almacena datos procesados, archivos intermedios y recursos utilizados durante las diferentes etapas del proyecto. |
+| `mlruns/` | Contiene los registros de experimentos generados mediante MLflow. |
+| `models/` | Almacena modelos entrenados, modelos serializados y otros artefactos asociados al proceso de Machine Learning. |
+| `monitoring/` | Contiene los componentes relacionados con monitoreo del modelo, análisis de producción y detección de Data Drift. |
+| `plantvillage/` | Contiene el conjunto de datos PlantVillage utilizado para el desarrollo del proyecto. |
+| `sample_data/` | Contiene datos de ejemplo o archivos auxiliares disponibles en el entorno de ejecución. |
+| `src/` | Contiene el código fuente principal del pipeline de Machine Learning y MLOps. |
+
+---
+
+## 📄 Descripción de archivos principales
+
+| Archivo | Descripción |
+|---|---|
+| `app.py` | Aplicación principal utilizada para ejecutar o exponer el servicio del proyecto. |
+| `informe_integridad_plantvillage.csv` | Informe generado durante el proceso de auditoría de integridad del dataset PlantVillage. |
+| `streamlit_dashboard.log` | Archivo de registro correspondiente a la ejecución del dashboard desarrollado mediante Streamlit. |
+| `streamlit_dashboard.pid` | Archivo que contiene el identificador del proceso asociado al dashboard de Streamlit. |
+| `uvicorn.log` | Archivo de registro de ejecución del servidor Uvicorn. |
+| `uvicorn.pid` | Archivo que contiene el identificador del proceso activo de Uvicorn. |
+| `uvicorn_windows.log` | Registro asociado a la ejecución de Uvicorn utilizada para el procesamiento o servicio de las ventanas de producción. |
+| `uvicorn_windows.pid` | Archivo que almacena el identificador del proceso correspondiente a la ejecución de Uvicorn para las ventanas de producción. |
+
+---
+
+# 🧠 Organización conceptual del proyecto
+
+La estructura del repositorio representa las principales etapas del ciclo de vida de un sistema de Machine Learning bajo un enfoque MLOps.
+
+El flujo general puede representarse de la siguiente manera:
+
+```text
+Datos
+  │
+  ▼
+Preparación y validación
+  │
+  ▼
+EDA y calidad de datos
+  │
+  ▼
+Ingeniería de características
+  │
+  ▼
+Modelado
+  │
+  ▼
+Evaluación
+  │
+  ▼
+Serialización
+  │
+  ▼
+API de inferencia
+  │
+  ▼
+Registro de predicciones
+  │
+  ▼
+Monitoreo
+  │
+  ▼
+Detección de Data Drift
+  │
+  ▼
+Alertas
+  │
+  ▼
+Revisión
+  │
+  ▼
+Acción
+```
+
+---
+
+# 🔄 Flujo MLOps del proyecto
+
+El proyecto busca implementar un flujo reproducible para el desarrollo, despliegue y monitoreo de un modelo de Machine Learning.
+
+De forma simplificada:
+
+```text
+PlantVillage
+     │
+     ▼
+Preparación de datos
+     │
+     ▼
+Control de calidad
+     │
+     ▼
+Extracción de características
+     │
+     ▼
+Entrenamiento de modelos
+     │
+     ▼
+Selección del modelo campeón
+     │
+     ▼
+Serialización del modelo
+     │
+     ▼
+FastAPI
+     │
+     ▼
+Inferencia
+     │
+     ▼
+Registro de predicciones
+     │
+     ▼
+Ventanas de producción
+     │
+     ▼
+Monitoreo de Data Drift
+     │
+     ▼
+Alertas
+     │
+     ▼
+Evaluación de reentrenamiento
+```
+
+---
+
+# 📊 Datos
+
+El directorio:
+
+```text
+data/
+```
+
+se utiliza para almacenar información relacionada con las diferentes etapas del pipeline.
+
+Puede contener:
+
+- conjuntos de entrenamiento;
+- conjuntos de validación;
+- conjuntos de prueba;
+- datos procesados;
+- ventanas de producción;
+- resultados de inferencia;
+- archivos utilizados para monitoreo;
+- métricas de desempeño;
+- resultados de Data Drift.
+
+---
+
+# 🌿 Dataset PlantVillage
+
+El directorio:
+
+```text
+plantvillage/
+```
+
+contiene las imágenes utilizadas para desarrollar el sistema de clasificación.
+
+El proyecto utiliza exclusivamente imágenes correspondientes a hojas de tomate.
+
+Después de las etapas de:
+
+- filtrado;
+- consolidación;
+- verificación de integridad;
+- detección de duplicados;
+- separación de copias redundantes;
+
+el dataset principal queda compuesto por:
+
+```text
+18.146 imágenes únicas
+```
+
+distribuidas en:
+
+```text
+10 clases sanitarias
+```
+
+---
+
+# 🧪 Experimentos con MLflow
+
+El directorio:
+
+```text
+mlruns/
+```
+
+es utilizado por MLflow para almacenar información relacionada con los experimentos.
+
+Puede incluir:
+
+- parámetros;
+- hiperparámetros;
+- métricas;
+- modelos;
+- artefactos;
+- resultados de diferentes ejecuciones.
+
+Esto permite mantener trazabilidad entre diferentes experimentos realizados durante el desarrollo.
+
+---
+
+# 🤖 Modelos
+
+El directorio:
+
+```text
+models/
+```
+
+contiene los modelos entrenados y serializados.
+
+La organización de los modelos permite separar los artefactos de Machine Learning del código fuente.
+
+Los modelos almacenados pueden ser posteriormente cargados por la API de inferencia sin necesidad de volver a ejecutar el entrenamiento.
+
+---
+
+# ⚙️ Código fuente
+
+El directorio:
+
+```text
+src/
+```
+
+contiene el código principal del proyecto.
+
+Este directorio puede incluir componentes relacionados con:
+
+- carga de datos;
+- preprocesamiento;
+- extracción de características;
+- entrenamiento;
+- evaluación;
+- serialización;
+- inferencia;
+- monitoreo;
+- detección de Data Drift;
+- generación de alertas;
+- procedimientos de reentrenamiento.
+
+---
+
+# 🌐 API de inferencia
+
+El directorio:
+
+```text
+api/
+```
+
+contiene los componentes utilizados para exponer el modelo mediante una API.
+
+El servicio puede implementarse mediante:
+
+```text
+FastAPI
+```
+
+y ejecutarse utilizando:
+
+```text
+Uvicorn
+```
+
+El flujo general de inferencia es:
+
+```text
+Cliente
+   │
+   ▼
+FastAPI
+   │
+   ▼
+Validación de entrada
+   │
+   ▼
+Preprocesamiento
+   │
+   ▼
+Modelo
+   │
+   ▼
+Predicción
+   │
+   ▼
+Respuesta JSON
+```
+
+---
+
+# 📡 Monitoreo
+
+El directorio:
+
+```text
+monitoring/
+```
+
+contiene los componentes relacionados con la observación del comportamiento del modelo durante producción.
+
+El monitoreo puede considerar:
+
+- distribución de variables;
+- características visuales;
+- distribución de predicciones;
+- métricas de Data Drift;
+- métricas de performance;
+- alertas;
+- estados de revisión;
+- decisiones de reentrenamiento.
+
+---
+
+# 📉 Data Drift
+
+El monitoreo de Data Drift permite detectar cambios entre los datos utilizados como referencia y los datos recibidos durante producción.
+
+En el proyecto se utilizan ventanas simuladas de producción:
+
+```text
+W0 → Referencia
+
+W1 → Producción estable
+
+W2 → Drift leve
+
+W3 → Drift moderado
+
+W4 → Drift significativo
+```
+
+Estas ventanas permiten estudiar cómo cambia progresivamente la distribución de los datos y cómo estas modificaciones pueden afectar el comportamiento del modelo.
+
+---
+
+# 📊 Dashboard
+
+El directorio:
+
+```text
+dashboard/
+```
+
+contiene los archivos utilizados para visualizar el estado del sistema.
+
+El dashboard puede mostrar información como:
+
+- métricas del modelo;
+- evolución de ventanas;
+- indicadores de Data Drift;
+- distribución de variables;
+- alertas;
+- estado operacional;
+- comportamiento de las predicciones.
+
+El dashboard puede implementarse mediante:
+
+```text
+Streamlit
+```
+
+---
+
+# 📝 Archivos de logs
+
+Los archivos:
+
+```text
+streamlit_dashboard.log
+uvicorn.log
+uvicorn_windows.log
+```
+
+permiten registrar información generada durante la ejecución de los servicios.
+
+Los logs pueden utilizarse para:
+
+- detectar errores;
+- analizar el comportamiento de la aplicación;
+- revisar el inicio y cierre de servicios;
+- identificar problemas en la API;
+- mantener trazabilidad operacional.
+
+---
+
+# 🔢 Archivos PID
+
+Los archivos:
+
+```text
+streamlit_dashboard.pid
+uvicorn.pid
+uvicorn_windows.pid
+```
+
+contienen los identificadores de los procesos que ejecutan determinados servicios.
+
+Estos archivos permiten administrar procesos que se ejecutan en segundo plano.
+
+---
+
+# 📑 Informe de integridad
+
+El archivo:
+
+```text
+informe_integridad_plantvillage.csv
+```
+
+contiene los resultados de la auditoría realizada sobre las imágenes del dataset.
+
+La auditoría permite verificar:
+
+- existencia del archivo;
+- integridad;
+- formato;
+- resolución;
+- número de canales;
+- modo de color;
+- posibles archivos problemáticos.
+
+Este control constituye una etapa fundamental antes del entrenamiento del modelo.
+
+---
+
+# 🧩 Separación de responsabilidades
+
+La estructura del proyecto busca mantener separados los principales componentes del sistema:
+
+```text
+data/
+```
+
+Datos utilizados por el sistema.
+
+```text
+src/
+```
+
+Lógica principal del pipeline.
+
+```text
+models/
+```
+
+Modelos entrenados y serializados.
+
+```text
+api/
+```
+
+Servicio de inferencia.
+
+```text
+monitoring/
+```
+
+Monitoreo y Data Drift.
+
+```text
+dashboard/
+```
+
+Visualización operacional.
+
+```text
+mlruns/
+```
+
+Seguimiento de experimentos.
+
+Esta separación facilita:
+
+- mantenimiento;
+- reproducibilidad;
+- escalabilidad;
+- depuración;
+- trazabilidad;
+- trabajo colaborativo.
+
+---
+
+# 🧹 Archivos que normalmente no deberían almacenarse en GitHub
+
+Algunos elementos mostrados en la estructura son generados automáticamente durante la ejecución.
+
+Entre ellos:
+
+```text
+__pycache__/
+*.log
+*.pid
+```
+
+Normalmente estos archivos deberían excluirse utilizando un archivo:
+
+```text
+.gitignore
+```
+
+Por ejemplo:
+
+```gitignore
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Archivos PID
+*.pid
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Configuraciones locales
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+```
+
+---
+
+# ✅ Estructura recomendada del repositorio
+
+Una versión más limpia para GitHub podría quedar organizada de la siguiente forma:
+
+```text
+.
+├── api/
+├── dashboard/
+├── data/
+├── models/
+├── monitoring/
+├── plantvillage/
+├── src/
+├── app.py
+├── informe_integridad_plantvillage.csv
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+Los archivos generados durante la ejecución pueden mantenerse fuera del control de versiones:
+
+```text
+__pycache__/
+*.log
+*.pid
+```
+
+---
+
+# 🎯 Objetivo de la organización
+
+La organización del repositorio busca mantener un proyecto reproducible y estructurado que permita cubrir el ciclo completo de Machine Learning y MLOps:
+
+```text
+Datos
+  ↓
+Calidad
+  ↓
+EDA
+  ↓
+Modelado
+  ↓
+Evaluación
+  ↓
+Serialización
+  ↓
+Servicio de inferencia
+  ↓
+Producción
+  ↓
+Monitoreo
+  ↓
+Data Drift
+  ↓
+Alertas
+  ↓
+Revisión
+  ↓
+Reentrenamiento o Rollback
+```
+
+Esta estructura permite separar claramente el desarrollo experimental del funcionamiento operacional del sistema y facilita la incorporación progresiva de nuevas funcionalidades.
+
+### > Documentos
+# 📄 Documentación del proyecto
+
+El repositorio incluye los siguientes documentos complementarios:
+
+```text
+.
+├── 📊 Foliar_Disease_MLOps.pptx
+└── 📄 ResumenEjecutivo.docx
+```
+
+---
+
+## 📁 Descripción de archivos
+
+| Archivo | Tipo | Descripción |
+|---|---|---|
+| `Foliar_Disease_MLOps.pptx` | Presentación PowerPoint | Presentación ejecutiva del proyecto MLOps orientado a la clasificación de enfermedades foliares del tomate. Resume la problemática, preparación de datos, modelado, evaluación, despliegue, monitoreo de Data Drift y principales resultados. |
+| `ResumenEjecutivo.docx` | Documento Word | Informe ejecutivo del proyecto. Contiene la problemática y justificación de negocio, EDA, calidad de datos, descripción del sistema, monitoreo MLOps, Data Drift, interpretación de resultados y conclusiones. |
+
+---
+
+# 📊 Presentación del proyecto
+
+El archivo:
+
+```text
+Foliar_Disease_MLOps.pptx
+```
+
+contiene la presentación utilizada para sintetizar visualmente las principales etapas del proyecto.
+
+Entre los contenidos principales se encuentran:
+
+- problemática y justificación de negocio;
+- descripción del dataset PlantVillage;
+- calidad y preparación de los datos;
+- análisis exploratorio de datos;
+- desarrollo del modelo de Machine Learning;
+- evaluación del modelo;
+- arquitectura MLOps;
+- servicio de inferencia;
+- monitoreo de producción;
+- detección de Data Drift;
+- alertas y política de actuación;
+- resultados y conclusiones.
+
+---
+
+# 📄 Resumen ejecutivo
+
+El archivo:
+
+```text
+ResumenEjecutivo.docx
+```
+
+presenta una síntesis técnica y ejecutiva del proyecto.
+
+Su propósito es documentar de manera estructurada:
+
+- el problema abordado;
+- la relevancia operacional de la solución;
+- las características y calidad del dataset;
+- el proceso de modelado;
+- los principales resultados obtenidos;
+- la necesidad de monitorear Data Drift;
+- el impacto potencial del deterioro del modelo;
+- las acciones propuestas frente a alertas;
+- las principales conclusiones del proyecto.
+
+---
+
+# 🧩 Relación entre ambos documentos
+
+Ambos archivos cumplen funciones complementarias:
+
+```text
+ResumenEjecutivo.docx
+        │
+        │  Desarrollo técnico y ejecutivo
+        ▼
+Contenido detallado del proyecto
+        │
+        ▼
+Foliar_Disease_MLOps.pptx
+        │
+        │  Síntesis visual
+        ▼
+Presentación de resultados
+```
+
+El documento Word contiene el desarrollo más detallado, mientras que la presentación PowerPoint resume los aspectos principales para su exposición y comunicación.
+### > Img
+Imagenes Para los Documentos
+
+### > Modelos
+# 🧪 Archivos principales del modelo MLOps
+
+El repositorio incluye los siguientes archivos relacionados con el entrenamiento, validación, transformación y despliegue del modelo de Machine Learning aplicado al conjunto PlantVillage:
+
+```text
+.
+├── 📓 Demo_Modelo_MLOps_PlantVillage.ipynb
+├── 🤖 model.joblib
+├── 🐍 prueba_modelo_plantvillage.py
+├── 📊 train_metrics.json
+└── 🐍 transformers.py
+```
+
+---
+
+## 📁 Descripción de archivos
+
+| Archivo | Tipo | Descripción |
+|---|---|---|
+| `Demo_Modelo_MLOps_PlantVillage.ipynb` | Jupyter Notebook | Notebook principal utilizado para demostrar y documentar el funcionamiento del modelo MLOps aplicado al dataset PlantVillage. |
+| `model.joblib` | Modelo serializado | Archivo que contiene el modelo de Machine Learning entrenado y serializado para ser reutilizado sin necesidad de volver a entrenarlo. |
+| `prueba_modelo_plantvillage.py` | Script Python | Script destinado a probar la carga, funcionamiento e inferencia del modelo entrenado sobre datos de PlantVillage. |
+| `train_metrics.json` | Archivo JSON | Contiene métricas registradas durante el entrenamiento y evaluación del modelo. |
+| `transformers.py` | Script Python | Contiene funciones o transformaciones utilizadas para preparar los datos antes de enviarlos al modelo. |
+
+---
+
+# 📓 Notebook principal
+
+El archivo:
+
+```text
+Demo_Modelo_MLOps_PlantVillage.ipynb
+```
+
+corresponde al notebook principal de demostración del modelo.
+
+Puede incluir etapas como:
+
+- carga del entorno;
+- preparación de datos;
+- carga del modelo entrenado;
+- ejecución de inferencias;
+- evaluación de predicciones;
+- visualización de resultados;
+- verificación de métricas;
+- pruebas del pipeline MLOps;
+- integración con componentes de monitoreo.
+
+Su objetivo es proporcionar una ejecución reproducible y documentada del flujo completo del modelo.
+
+---
+
+# 🤖 Modelo serializado
+
+El archivo:
+
+```text
+model.joblib
+```
+
+contiene el modelo entrenado y almacenado mediante serialización.
+
+Este mecanismo permite guardar el modelo después del entrenamiento y recuperarlo posteriormente para realizar inferencias.
+
+El flujo general es:
+
+```text
+Entrenamiento
+     │
+     ▼
+Modelo entrenado
+     │
+     ▼
+Serialización
+     │
+     ▼
+model.joblib
+     │
+     ▼
+Carga del modelo
+     │
+     ▼
+Inferencia
+```
+
+La principal ventaja es evitar la necesidad de volver a entrenar el modelo cada vez que se inicia el servicio.
+
+---
+
+# 🧪 Script de prueba del modelo
+
+El archivo:
+
+```text
+prueba_modelo_plantvillage.py
+```
+
+permite verificar el funcionamiento del modelo fuera del notebook.
+
+Este script puede utilizarse para:
+
+- cargar `model.joblib`;
+- cargar los transformadores necesarios;
+- preparar observaciones de entrada;
+- generar predicciones;
+- verificar probabilidades;
+- comprobar compatibilidad entre entrenamiento e inferencia;
+- detectar errores antes de integrar el modelo con la API.
+
+El flujo conceptual puede representarse como:
+
+```text
+Datos de prueba
+      │
+      ▼
+Transformaciones
+      │
+      ▼
+Modelo
+      │
+      ▼
+Predicción
+      │
+      ▼
+Validación del resultado
+```
+
+---
+
+# 📊 Métricas de entrenamiento
+
+El archivo:
+
+```text
+train_metrics.json
+```
+
+almacena información relacionada con el desempeño obtenido durante el entrenamiento y evaluación del modelo.
+
+Este tipo de archivo puede contener valores como:
+
+- accuracy;
+- precision;
+- recall;
+- F1 macro;
+- ROC-AUC;
+- métricas de validación;
+- métricas de test;
+- parámetros del experimento.
+
+Su utilización permite mantener trazabilidad entre el modelo almacenado y los resultados obtenidos durante su desarrollo.
+
+Ejemplo conceptual:
+
+```text
+Modelo
+  │
+  ├── model.joblib
+  │
+  └── train_metrics.json
+```
+
+De esta manera, el artefacto del modelo puede mantenerse asociado a sus métricas de referencia.
+
+---
+
+# 🔄 Transformaciones
+
+El archivo:
+
+```text
+transformers.py
+```
+
+contiene las funciones necesarias para transformar los datos antes de realizar una predicción.
+
+Estas transformaciones deben mantenerse consistentes entre:
+
+```text
+Entrenamiento
+```
+
+e:
+
+```text
+Inferencia
+```
+
+El flujo esperado es:
+
+```text
+Entrada
+  │
+  ▼
+transformers.py
+  │
+  ▼
+Datos transformados
+  │
+  ▼
+model.joblib
+  │
+  ▼
+Predicción
+```
+
+Mantener las mismas transformaciones durante entrenamiento y producción es fundamental para evitar inconsistencias entre ambos entornos.
+
+---
+
+# 🔗 Relación entre los archivos
+
+Los cinco archivos forman parte de un mismo flujo operacional:
+
+```text
+Demo_Modelo_MLOps_PlantVillage.ipynb
+                │
+                ▼
+        Entrenamiento / Demo
+                │
+                ▼
+        ┌───────────────┐
+        │               │
+        ▼               ▼
+  model.joblib     train_metrics.json
+        │
+        ▼
+  transformers.py
+        │
+        ▼
+prueba_modelo_plantvillage.py
+        │
+        ▼
+     Inferencia
+        │
+        ▼
+Validación del funcionamiento
+```
+
+---
+
+# 🧩 Organización funcional
+
+La función de cada archivo puede resumirse de la siguiente manera:
+
+```text
+Demo_Modelo_MLOps_PlantVillage.ipynb
+        │
+        └── Desarrollo y demostración
+
+model.joblib
+        │
+        └── Modelo entrenado
+
+train_metrics.json
+        │
+        └── Métricas de referencia
+
+transformers.py
+        │
+        └── Transformación de entrada
+
+prueba_modelo_plantvillage.py
+        │
+        └── Pruebas e inferencia
+```
+
+---
+
+# ⚙️ Flujo de inferencia
+
+El funcionamiento del modelo puede representarse mediante:
+
+```text
+Nueva observación
+       │
+       ▼
+transformers.py
+       │
+       ▼
+Preprocesamiento
+       │
+       ▼
+model.joblib
+       │
+       ▼
+Predicción
+       │
+       ▼
+Resultado
+```
+
+---
+
+# ✅ Objetivo de esta estructura
+
+La separación de estos archivos permite mantener claramente diferenciadas las etapas de:
+
+- experimentación;
+- entrenamiento;
+- persistencia del modelo;
+- transformación de datos;
+- evaluación;
+- pruebas;
+- inferencia.
+
+Esta organización facilita la reproducibilidad del proyecto y permite utilizar el modelo dentro de una arquitectura MLOps sin depender exclusivamente del notebook de desarrollo.
+
+
+### > Trabajo
+
+
+
+
+
 Algunos CSV, modelos y ventanas son artefactos generados. Si no se versionan en Git, deben reconstruirse ejecutando el notebook o los scripts correspondientes.
 
 ## 9. Requisitos
